@@ -47,7 +47,14 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* Root theme (merged: keeps your oklch palette but defines base vars explicitly too) */
 :root {
+  /* shadcn-style base HSL fallback values from earlier */
+  /* These work as conceptual defaults; your oklch values below actually drive the colors */
+  --background-base: 0 0% 100%;
+  --foreground-base: 222.2 84% 4.9%;
+
+  /* Your actual OKLCH-driven tokens (used by the app) */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -82,7 +89,13 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* Dark theme (merged: keeps your oklch palette and aligns with earlier dark background/foreground idea) */
 .dark {
+  /* Minimal earlier vars (for reference/fallback) */
+  --background-base: 222.2 84% 4.9%;
+  --foreground-base: 210 40% 98%;
+
+  /* Your OKLCH tokens */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
