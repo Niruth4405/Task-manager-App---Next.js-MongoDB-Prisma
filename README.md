@@ -28,10 +28,5 @@ A modern task management app built with **Next.js 16** and **shadcn/ui**, focuse
 - `app/actions/tasks.ts` – Server actions for creating tasks (Prisma integration planned).
 - `app/globals.css` – Global styles, Tailwind layers, and design tokens for light/dark themes. [web:81][web:86][web:91]
 
-## Getting Started
 
-1. **Clone the repository**
 
-   ```bash
-   git clone https://github.com/<your-username>/taskify.git
-   cd taskify
