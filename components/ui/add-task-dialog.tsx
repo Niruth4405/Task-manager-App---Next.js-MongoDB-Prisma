@@ -31,7 +31,7 @@ export function AddTaskDialog() {
   }
 
   return (
-    <Dialog>
+    <Dialog suppressHydrationWarning>
       <DialogTrigger asChild>
         <Button size="sm">Add Task</Button>
       </DialogTrigger>
